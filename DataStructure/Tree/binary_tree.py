@@ -106,4 +106,6 @@ class Tree:
                 successor.right.parent = successor.parent
 
         return True
-                
+if __name__ == "__main__":
+    tree = Tree()
+    
