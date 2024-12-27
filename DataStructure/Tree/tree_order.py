@@ -38,3 +38,14 @@ class Binary_Tree:
                 
             print(node.data, end = " ")    
         _postordder(self.root)
+        
+    def levelorder(self):
+        q = []
+        q.append(self.root)
+        while q:
+            node = q.pop(0)
+            print(node.data, end = " ")
+            if node.left:
+                q.append(node.left)
+            if node.right:
+                q.append(node.right)
